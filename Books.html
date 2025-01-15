@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details Toggle</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <script src="myFunction.js"></script>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Our Online Bookshop</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="books.html">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <table border="1" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>رمزالكتاب</th>
+                        <th>العنوان</th>
+                        <th>السعر</th>
+                        <th>إظهار التفاصيل</th>
+                        <th>اختيار</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>978-9770916738</td>
+                        <td> إيكادولي </td>
+                        <td>25000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="978-9770916738">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-978-9770916738" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong> دار المعارف</p>
+                            <p><strong>تصنيف الكتاب:</strong> خيالي , فنتازية </p>
+                            <p><strong>ملخص:</strong> تدور أحداث الرواية عن صراع بين الخير و الشر؛ في أرض انتزعت منها الرحمة و تحتاج الى الأمانة و الموعظة الحسنة يذهب أنس عبر الزمن في رحلة خيالية لإتمام المهمة
+                            </p>
+                            <p>
+                             <img src= "img/ايكادولي.jpg" class="img1" width="20%" height="20%"/>
+                            </p>
+                            <p><strong>هناك روايات مرتبطة مثل:</strong> 
+                              <div id="img0">
+                                <div>
+                                    <p>
+                                      اوبال  <br>
+                                      <img src="img\اوبال.jpg" width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                     سقطرى   <br>
+                                     <img src="img\سقطرى.jpg" width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       كويكول <br>
+                                       <img src="img\كويكول.jpg" width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                              </div>
+                             </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>978-9953891718</td>
+                        <td>الرمز المفقود</td>
+                        <td>12000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="978-9953891718">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-978-9953891718" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong> دار الساقي</p>
+                            <p><strong>تصنيف الكتاب:</strong>  رواية بوليسية </p>
+                            <p><strong>ملخص:</strong> تتم دعوة أستاذ علم الرموز في جامعة هارفرد "روبرت لانغدون ،في اللحظة الأخيرة لإلقاء محاضرة مسائية في في مبنى الكابيتول ولكن،و بعد لحظات من وصوله،يتم اكتشاف شيء مثير للاضطراب في وسط قاعة "الروتوندا ،شيئء تم تشفيره على نحو مروع بخمسة رموز غامضة
+
+                            </p>
+                            <p>
+                                <img src="img\الرمز المفقود.jpg" class="img1" width="20%" height="20%"/>
+                            </p>
+                            <p><strong>روايات مرتبطة </strong> 
+                            <div id="img2">
+                                <div>
+                                    <p>
+                                       شيفرة دافنشي <br>
+                                        <img src="img\شيفرة دافنشي.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       الجحيم <br>
+                                        <img src="img\الجحيم.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                            </div>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>948-9953894868</td>
+                        <td> قواعد جارتن </td>
+                        <td>33000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="948-9953894868">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-948-9953894868" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong>دار المعارف </p>
+                            <p><strong>تصنيف الكتاب:</strong> رواية خيال علمي </p>
+                            <p><strong>ملخص:</strong> تدور أحداث الرواية حول بلد خيالي اسمه {جارتن} و يقول كاتب الرواية أن طوفان بحر {أكما} تسبب بزواله ، بعد هذه الحادثة بسنوات طويلة انحسرت مياه البحر و ظهرت البلد ، و من ثم بدء الشعب الذي يقطنه و الذي ينقسم الى قسمين بإعماره، وفي ظل قواعد و قوانين صارمة قد تصل لحد الإعدام لمن يتجاوزها ، فضلاً عن الصراع الدائر بين هاتين الطبقتين </p>
+                            <p>
+                                <img src="img\قواعدجارتن.jpg" class="img1" width="20%" height="20%"/>
+                            </p>
+                            <p><strong>روايات مرتبطة </strong> 
+                            <div id="img3">
+                                <div>
+                                    <p>
+                                      ارض زيكولا  <br>
+                                        <img src="img\ارض زيكولا.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                      اماريتا  <br>
+                                        <img src="img\اماريتا.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                      فتاة الياقة الزرقاء  <br>
+                                        <img src="img\فتاة الياقة الزرقاء.jpg"  width="20%" height="20%"/>
+                                    </p>
+                                </div>
+                            </div>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>158-9953756318</td>
+                        <td> السلام عليك يا صاحبي </td>
+                        <td>19000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="158-9953756318">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-158-9953756318" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong> الدار العربية للغات </p>
+                            <p><strong>تصنيف الكتاب:</strong> أدب ديني</p>
+                            <p><strong>ملخص:</strong> ."يتحدث الكتاب عن الأنبياء عليهم السلام و عن مواقف بعض الصحابة ، "السلام عليك يا صاحبي ، تسألني عن السعادة فتقول :متى أصل إليها؟ فأقول لك : السعادة ليست محطة تصل إليها،و إنما طريق تمشي فيه
+                            </p>
+                            <p>
+                                <img src="img\السلام عليك.jpg" class="img1" width="20%" height="20%"/>
+                            </p>
+                            <p><strong>روايات مرتبطة </strong>
+                            <div id="img4">
+                                <div>
+                                    <p>
+                                       حديث الصباح <br>
+                                        <img src="img\حديث الصباح.jpg" width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       نبض<br>
+                                        <img src="img\نبض.jpg"  width="15%" height="15%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       ليطمئن قلبي <br>
+                                        <img src="img\ليطمئن قلبي.jpg"  width="15%" height="15%"/>
+                                    </p>
+                                </div>
+                            </div>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>238-9926489218</td>
+                        <td> 11:11 </td>
+                        <td>15000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="238-9926489218">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-238-9926489218" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong> دار العربية للعلوم</p>
+                            <p><strong>تصنيف الكتاب:</strong>  رواية خيالية </p>
+                            <p><strong>ملخص:</strong> . يكشف الكتاب معتقدات بواسطة الساعة 11:11. هذه المعتقدات تتعلق بتحقيق الأمنيات. رواية توضح تأثير هذه الإيمان على حياة الشخصيات الرئيسية.حيث أنشأت أجواء خيالية وعاطفية تأسر قلب القارئ إليها 
+                            </p>
+                            <p>
+                                <img src="img\11.jpg" class="img1" width="20%" height="20%"/>
+                            </p>
+                            <p><strong>روايات مرتبطة </strong> 
+                            <div id="img5">
+                                <div>
+                                    <p>
+                                       مليون خاطر <br>
+                                        <img src="img\مليون خاطر.jpg" width="30%" height="30%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       من لهيب الشوق <br>
+                                        <img src="img\لهيب الشوق.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                            </div>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>738-4962191718</td>
+                        <td> في قلبي أنثى عبرية</td>
+                        <td>20000 ل.س</td>
+                        <td><button class="details-btn" data-book-id="738-4962191718">Show Details</button></td>
+                        <td><input type="radio" name="book" class="choose-book"></td>
+                    </tr>
+                    <tr class="details-row" id="details-738-4962191718" style="display: none;">
+                        <td colspan="5" class="details">
+                            <p><strong>الناشر:</strong> دار التقوى</p>
+                            <p><strong>تصنيف الكتاب:</strong> رواية خيالية </p>
+                            <p><strong>ملخص:</strong>.تعرض الرواية علاقة المسلمين بغيرهم و خاصة اليهود،كما تعرض بغض الفروقات بين المرآة المسلمة و المرآة اليهودية ، "هل تعلمين أن الناس لا يعرفون عنا سوى نهاياتنا ؟ عندما نموت نصبح رمزاً للجهاد و المقاومة. 
+                             </p>
+                             <p>
+                                <img src="img\في قلبي.jpg" class="img1" width="20%" height="20%"/>
+                             </p>
+                            <p><strong>روايات مرتبطة </strong> 
+                            <div id="img6">
+                                <div>
+                                    <p>
+                                       غربة الياسمين <br>
+                                        <img src="img\غربة الياسمين.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                       اين المفر <br>
+                                        <img src="img\اين المفر.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                      ارني انظر اليك  <br>
+                                        <img src="img\ارني انظر اليك.jpg"  width="10%" height="10%"/>
+                                    </p>
+                                </div>
+                            </div>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Submit Button *-->
+            <button id="submit-btn" style="">متابعة</button>
+            <div id="form-container" style="display:none;">
+                <h3>يرجى ملء المعلومات أدناه:</h3>
+                <form id="details-form">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="national-id">الرقم الوطني:</label>
+                    <input type="text" id="national-id" name="national-id"><br><br>
+
+                    <label for="dob">تاريخ الولادة:</label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="phone">رقم الموبايل:</label>
+                    <input type="text" id="phone" name="phone"><br><br>
+
+                    <label for="email">الإيميل:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2025 مكتبة دار الأمل</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #6200ea;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    color: #6200ea;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #e0e0e0;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navbar Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    background-color: #6200ea; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect for Button */
+nav ul li a:hover {
+    background-color: #3700b3; /* Darker shade of purple for hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For devices with a max width of 768px (tablets and below) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    nav ul li a {
+        padding: 12px 25px; /* Larger padding for easier tap on mobile */
+        font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
+
+/* For devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Slightly smaller padding for mobile */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    ul li {
+        font-size: 0.9rem; /* Smaller font size for list items */
+    }
+}
+
+/* For larger screens (desktops and laptops) */
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: space-between; /* Space out the navigation items */
+    }
+}
+
+/* About Us Page Styling */
+#library-info, #contact-info {
+    background-color: #ffffff; /* White background for sections */
+    padding: 1.5rem;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-bottom: 2rem; /* Space between sections */
+}
+
+#library-info h2, #contact-info h2 {
+    color: #6200ea; /* Purple color for section headings */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#library-info p, #contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+
+/* Links Styling */
+a {
+    color: #6200ea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness for About Us Page */
+@media (max-width: 768px) {
+    #library-info, #contact-info {
+        padding: 1rem; /* Reduced padding for smaller screens */
+    }
+
+    #library-info h2, #contact-info h2 {
+        font-size: 1.5rem; /* Smaller section heading for mobile */
+    }
+
+    #library-info p, #contact-info p {
+        font-size: 0.95rem; /* Slightly smaller text for better mobile readability */
+    }
+}
+
+
+/*-------------------------- about use -----------------------------*/
+
+/* General Layout */
+
+
+/* Main Section Centering */
+main {
+    width: 100%;
+    max-width: 900px; /* Maximum width for main content */
+    padding: 2rem;
+    position : relative;
+    top:50%;
+    left:20%;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners for main section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Section Styling */
+#library-info, #contact-info {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+    #library-info h2, #contact-info h2 {
+        color: #6200ea; /* Purple color for section headings */
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-align: center; /* Center the section headings */
+    }
+
+    #library-info p, #contact-info p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        text-align: center; /* Center the paragraphs */
+    }
+
+/* Scoped UL and LI for Main Section */
+main ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack the list items vertically */
+    align-items: center; /* Center list items horizontally */
+}
+
+    main ul li {
+        background-color: #e0e0e0; /* Light grey background */
+        padding: 0.5rem 1rem; /* Padding for list items */
+        border-radius: 4px;
+        margin-bottom: 0.8rem; /* Space between list items */
+        width: auto; /* Let the list items take only the space needed */
+        max-width: 80%; /* Optional: limit the width of the list items */
+        text-align: center; /* Center text inside list items */
+    }
+
+/* Links Styling */
+a {
+    color: #6200ea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem; /* Reduced padding for smaller screens */
+       left:0;
+       top:0;
+    }
+
+    #library-info h2, #contact-info h2 {
+        font-size: 1.5rem; /* Smaller section heading */
+    }
+
+    #library-info p, #contact-info p {
+        font-size: 0.95rem; /* Smaller text for mobile */
+    }
+
+    main ul li {
+        width: 90%; /* Allow list items to take more space on smaller screens */
+    }
+}
+#library-info{
+    background-color:rgba(204, 189, 189, 0.829);
+    border: 4 ;
+    border-color: black;
+}
+#contact-info{
+    background-color:rgba(204, 189, 189, 0.829);
+    border: 4;
+    border-color: black;
+}
